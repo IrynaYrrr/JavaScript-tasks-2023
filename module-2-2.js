@@ -11,3 +11,16 @@
 // Не целые числа могут быть заданы в виде 24.7 или 24,7, т.е. в качестве разделителя дробной части может быть запятая.
 
 // Индекс массы тела необходимо округлить до одной цифры после запятой;
+
+
+
+// function calcBMI(weight, height) {
+//   weight = Number(weight.replace(',', '.'));
+//   height = Number(height.replace(',', '.'));
+
+//   return Number((weight / height ** 2).toFixed(1));
+//   // return Number(weight / Math.pow(height, 2)).toFixed(1);
+// }
+
+// const bmi = calcBMI('74,9', '1.68')
+// console.log(bmi);
