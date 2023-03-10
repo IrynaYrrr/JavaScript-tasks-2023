@@ -158,3 +158,68 @@
 
 //   // Change code above this line
 // };
+
+
+// const pizzaPalace = {
+//   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+//   order(pizzaName, onSuccess, onError) {
+//     console.log(this.pizzas);
+//     if(!this.pizzas.includes(pizzaName)) {
+//       return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
+//     };
+//     return onSuccess(pizzaName);
+//   },
+// };
+
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// console.log(pizzaPalace.order('Smoked', makePizza, onOrderError));
+
+// console.log(pizzaPalace.order('Four meats', makePizza, onOrderError));
+
+// pizzaPalace.order('Big Mike', makePizza, onOrderError);
+// pizzaPalace.order('Vienna', makePizza, onOrderError);
+
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newArr = [];
+//   numbers.forEach(element => {
+//     if (element % 2 === 0) {
+//       newArr.push(element + value);
+//     };
+//   });
+//   return newArr;
+//   // Change code above this line
+// }
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // Change code below this line
+// const planetsLengths = planets.map(planet => planet.length);
+// console.log(planetsLengths);
+
+
+
+const players = [
+  { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+  { name: "Poly", playtime: 469, gamesPlayed: 2 },
+  { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+  { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+];
+// Change code below this line
+
+const totalAveragePlaytimePerGame = players.reduce((acc, curr) => {
+    return acc + curr.playtime / curr.gamesPlayed;
+}, 0);
